@@ -1,0 +1,56 @@
+body
+{
+    display: grid;
+    grid-template-columns: minmax(200px, 200px) 1fr 1fr;
+    grid-template-rows: minmax(50px, 50px) 1fr 30px;
+    grid-template-areas: 
+        'header header  header'
+        'nav    main    main'
+        'nav    footer  footer'
+    ;
+
+}
+
+header
+{
+    background-color: #666;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav
+{
+    background-color: #888;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main
+{
+    background-color: #AAA;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer
+{
+    background-color: #CCC;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
